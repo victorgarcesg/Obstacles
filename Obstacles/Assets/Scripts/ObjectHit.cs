@@ -9,6 +9,7 @@ public class ObjectHit : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             GetComponent<MeshRenderer>().material.color = Color.red;
+            collision.gameObject.transform.localPosition = new Vector3(-15.89f, 0.194f, -15.95f);
         }
     }
 }

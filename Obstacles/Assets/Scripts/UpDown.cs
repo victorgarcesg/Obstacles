@@ -18,6 +18,5 @@ public class UpDown : MonoBehaviour
     {
         float y = Mathf.PingPong(Time.time * speed, 1) * range;
         transform.position = new Vector3(transform.position.x, y + initalYValue, transform.position.z);
-        Debug.Log(transform.position);
     }
 }

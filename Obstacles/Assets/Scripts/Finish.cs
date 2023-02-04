@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Finish : MonoBehaviour
 {
+    public YouWinScreen YouWinScreen;
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("You win!");
+        YouWinScreen.Setup();
     }
 }
